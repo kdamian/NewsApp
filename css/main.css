@@ -1,5 +1,7 @@
 body {
   font-family: 'Exo 2', sans-serif;
+  background-image: url(../img/back.png);
+
 
 }
 
@@ -10,17 +12,18 @@ body {
   justify-content: center;
   align-items: flex-start;
   align-content: space-around;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .wiadomosc {
   width: 40%;
-  height: 550px;
+  /*height: 550px;*/
   margin: 20px;
   border-radius: 10px;
   border: 1px solid black;
   text-align: center;
+  background: white;
 }
 
 .wiadomoscTlo {
@@ -28,21 +31,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35%;
+  height: 200px;
   border-top-right-radius: 10px ;
   border-top-left-radius: 10px;
 }
 
 .wiadomoscNaglowek {
   font-weight: 200;
+  padding: 20px;
 }
 
 .wiadomoscP {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .wiadomoscAutor {
   text-align: right;
   padding: 20px;
   font-size: 16px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .wiadomosc {
+    width: 90%;
+  }
 }
