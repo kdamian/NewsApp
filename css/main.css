@@ -1,7 +1,48 @@
 body {
-  background-color: #AAAAAA;
-  color: white;
+  font-family: 'Exo 2', sans-serif;
+
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
 
+.wiadomosc {
+  width: 40%;
+  height: 550px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
 
+.wiadomoscTlo {
+  background-image: url(../img/technology.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35%;
+  border-top-right-radius: 10px ;
+  border-top-left-radius: 10px;
+}
+
+.wiadomoscNaglowek {
+  font-weight: 200;
+}
+
+.wiadomoscP {
+  padding: 20px;
+}
+
+.wiadomoscAutor {
+  text-align: right;
+  padding: 20px;
+  font-size: 16px;
+}
