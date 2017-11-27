@@ -18,7 +18,7 @@ body {
 
 .wiadomosc {
   width: 40%;
-  /*height: 550px;*/
+  height: 550px;
   margin: 20px;
   border-radius: 10px;
   border: 1px solid black;
@@ -28,17 +28,18 @@ body {
 
 .wiadomoscTlo {
   background-image: url(../img/technology.jpg);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 250px;
   border-top-right-radius: 10px ;
   border-top-left-radius: 10px;
 }
 
 .wiadomoscNaglowek {
   font-weight: 200;
-  padding: 20px;
+  padding: 0 20px;
+  font-size: 25px;
 }
 
 .wiadomoscP {
