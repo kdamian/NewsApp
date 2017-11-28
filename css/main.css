@@ -36,6 +36,39 @@ body {
   border-top-left-radius: 10px;
 }
 
+
+#logo {
+  position: absolute; top: -525px; right: 80px ; z-index: 5
+}
+
+#rectangleM
+{
+    width: 706px;
+  	height: 210px;
+  	background: #f1f1f1;
+    position: absolute; left: 557px; top: -10px;
+    z-index: 4
+}
+
+#rectangle_right
+{
+  width: 0;
+  	height: 0;
+  	border-top: 210px solid #f1f1f1;
+  	border-right: 550px solid transparent;
+    position: absolute; top: -10px;
+    left: 1260px;
+}
+
+#rectangle_left
+{
+  width: 0;
+  	height: 0;
+  	border-top: 210px solid #f1f1f1;
+  	border-left: 550px solid transparent;
+    position: absolute; top: -10px;
+
+=======
 .wiadomoscNaglowek {
   font-weight: 200;
   padding: 0 20px;
@@ -57,4 +90,5 @@ body {
   .wiadomosc {
     width: 90%;
   }
+
 }
