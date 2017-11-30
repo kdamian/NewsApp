@@ -36,6 +36,11 @@ body {
   border: solid 1px black;
 }
 
+.active {
+  background-color: black;
+  color: white;
+}
+
 .wiadomosc {
   width: 40%;
   height: 550px;

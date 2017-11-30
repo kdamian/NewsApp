@@ -7,10 +7,22 @@ let strony = document.querySelectorAll('.pages');
 strony.forEach(function(strona) {
   console.log(strona.value)
   strona.addEventListener('click', ()=>{
+
     document.querySelector('.container').innerHTML= '';
     getNews(strona.value)
+    addActive(strona);
   });
 });
+
+function addActive(strona){
+  strony.forEach((strona)=>{
+    if (strona.classList.contains('active')) {
+      strona.classList.remove('active');
+    }
+  });
+
+  strona.classList.add('active');
+}
 
 function getNews(page)
 {
