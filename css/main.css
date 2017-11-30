@@ -16,6 +16,26 @@ body {
   margin-top: 250px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 20px;
+}
+
+.pages {
+  height: 50px;
+  width: 40px;
+  font-size: 16px;
+  font-weight: 200;
+  background: white;
+  margin: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: solid 1px black;
+}
+
 .wiadomosc {
   width: 40%;
   height: 550px;
