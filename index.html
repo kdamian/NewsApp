@@ -69,45 +69,74 @@
 
   <!--footer-->
   	<footer>
-  		<div class='leftContainer'>
-  			<ul>
-  				<a href="#">
-  					<li><b>Privacy Policy</b></li>
-  				</a>
-  				<li><b>|</b></li>
-  				<a href="#">
-  					<li><b>FAQ</b></li>
-  				</a>
-  				<li><b>|</b></li>
-  				<a href="#">
-  					<li><b>Support</b></li>
-  				</a>
-  			</ul>
-  		</div>
+      <div class = 'allContainer'>
+    		<div class='leftContainer'>
+    			<ul>
+    				<a href="#">
+    					<li><b>Privacy Policy</b></li>
+    				</a>
+    				<li><b>|</b></li>
+    				<a href="#">
+    					<li><b>FAQ</b></li>
+    				</a>
+    				<li><b>|</b></li>
+    				<a href="#">
+    					<li><b>Support</b></li>
+    				</a>
+    			</ul>
+    		</div>
 
-  		<div class='rightContainer'>
-  			<b>
-  				Having problem? Let us know.
-  			</b>
+    		<div class='rightContainer'>
+    			<b>
+    				Having problem? Let us know.
+    			</b>
 
-  			<div class='bottomRightContainer'>
-  				<div id="img1">
-  					<a href="#">
-  										<!--Icon made by Freepik from www.flaticon.com -->
-  						<img src="css/my-icons-collection/png/002-social-media.png" style="width: 30px; height: 30px;" >
-  					</a>
-  				</div>
-  				<div id="img2">
-  					<a href="#">
-  						<!--Icon made by PixelBuddha from www.flaticon.com -->
-  						<img src="css/my-icons-collection/png/001-twitter.png" style="width: 30px; height: 30px;">
-  					</a>
-  				</div>
-  			</div>
-  		</div>
-
+    			<div class='bottomRightContainer'>
+    				<div id="img1">
+    					<a href="#">
+    										<!--Icon made by Freepik from www.flaticon.com -->
+    						<img src="css/my-icons-collection/png/002-social-media.png" style="width: 30px; height: 30px;" >
+    					</a>
+    				</div>
+    				<div id="img2">
+    					<a href="#">
+    						<!--Icon made by PixelBuddha from www.flaticon.com -->
+    						<img src="css/my-icons-collection/png/001-twitter.png" style="width: 30px; height: 30px;">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+      </div>
   	</footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
 
+    <script src="jquery-1.11.3.min.js"></script>
+
+    <script>
+    var h = window.innerHeight;
+
+
+      $(document).ready(function() {
+      var footerY = $('footer').offset().top;
+
+      var stickyFooter = function(){
+      var ScrollY = $(window).scrollTop();
+
+      if (ScrollY > footerY - 540) {
+        $('footer').addClass('sticky');
+      }else {
+        $('footer').removeClass('sticky');
+      }
+      };
+
+      stickyFooter();
+
+      $(window).scroll(function() {
+        stickyFooter();
+      });
+      });
+
+    </script>
 
 <script src="js/main.js" charset="utf-8"></script>
 </body>
