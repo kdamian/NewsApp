@@ -48,3 +48,8 @@ function getNews(page)
       console.log( "Request Failed: " + err );
   });
 }
+
+function portals()
+{
+  document.getElementById("#menuB:hover > ul").style.display = "block";
+}
