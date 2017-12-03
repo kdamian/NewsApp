@@ -11,6 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/fontello/css/fontello.css" />
 
 	<link rel=h ref="css/my-icons-collection.png" type="text/png" />
 
@@ -19,12 +20,13 @@
 
 <body>
 
-
   <div id="logo">
     <img src="images/logo latest news.png" />
   </div>
 
+
   <div id="rectangleM">
+
   </div>
 
   <div id="rectangle_right">
@@ -37,18 +39,18 @@
   <div class='menu'>
     <div id='menuS'>
       <input id="search" value="szukaj">
-      <img src="img/search.png" style="float: right; padding: 4px"></>
+      <img src="img/search.png" style="float: right; padding: 4px">
       </>
 
     </div>
-    <div id='menuB' onclick="portals()">
+    <div id='menuB' >
       Wybór portalu
-      <img src="img/down_arrow.png" style="float: right; padding: 6px;"></>
+      <img src="img/down_arrow.png" style="float: right; padding: 6px;">
       <ul>
-					<li>TechCrunch</li>
-					<li>BBC News</li>
-					<li>Bloomberg</li>
-					<li>Buzzfeed</li>
+					<li id="techcrunch">TechCrunch</li>
+					<li id="abcnews">ABC News</li>
+					<li id="bloomberg">Bloomberg</li>
+					<li id="buzzfeed">Buzzfeed</li>
 			</ul>
     </div>
   </div>
@@ -56,9 +58,8 @@
   <div class='container'>
 
   </div>
-
   <div class="pagination">
-    <button value="1" class="pages active">1</button>
+    <button value="1" class="pages active first">1</button>
     <button value="2" class="pages">2</button>
     <button value="3" class="pages">3</button>
     <button value="4" class="pages">4</button>
@@ -67,8 +68,10 @@
     <button value="7" class="pages">7</button>
   </div>
 
-  <!--footer-->
-  	<footer>
+
+
+  <!-- footer-->
+  	<!-- <footer>
       <div class = 'allContainer'>
     		<div class='leftContainer'>
     			<ul>
@@ -94,25 +97,49 @@
     			<div class='bottomRightContainer'>
     				<div id="img1">
     					<a href="#">
-    										<!--Icon made by Freepik from www.flaticon.com -->
     						<img src="css/my-icons-collection/png/002-social-media.png" style="width: 30px; height: 30px;" >
     					</a>
     				</div>
     				<div id="img2">
     					<a href="#">
-    						<!--Icon made by PixelBuddha from www.flaticon.com -->
     						<img src="css/my-icons-collection/png/001-twitter.png" style="width: 30px; height: 30px;">
     					</a>
     				</div>
     			</div>
     		</div>
       </div>
-  	</footer>
+  	</footer> -->
+
+    <footer>
+
+      <div id='footercontainer'>
+        <div>
+          <span><a href="#">Privacy Policy</a></span>
+          <span>|</span>
+          <span><a href="#">FAQ</a></span>
+          <span>|</span>
+          <span><a href="#">Support</a></span>
+
+        </div>
+
+        <div id="problem">
+          <span><b>Having problem? Let us know.</b></span>
+        </div>
+
+        <div>
+
+          <span class="icon-twitter"></span>
+          <span class="icon-facebook"></span>
+        </div>
+    </div>
+    </footer>
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
 
     <script src="jquery-1.11.3.min.js"></script>
 
-    <script>
+    <!-- <script>
     var h = window.innerHeight;
 
 
@@ -136,7 +163,7 @@
       });
       });
 
-    </script>
+    </script> -->
 
 <script src="js/main.js" charset="utf-8"></script>
 </body>

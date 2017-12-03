@@ -1,8 +1,22 @@
 let page;
-window.onload = getNews(1);
+let source;
+window.onload = getNews(1, 'techcrunch');
 
 
 let strony = document.querySelectorAll('.pages');
+
+let techcrunch = document.querySelector('#techcrunch');
+let abcnews = document.querySelector('#abcnews');
+let bloomberg = document.querySelector('#bloomberg');
+let buzzfeed = document.querySelector('#buzzfeed');
+const pierwsza = document.querySelector('.first');
+
+techcrunch.addEventListener('click', () =>{ getNews(1, 'techcrunch'); addActive(pierwsza)});
+abcnews.addEventListener('click', () =>{ getNews(1, 'abc-news'); addActive(pierwsza)});
+bloomberg.addEventListener('click', () =>{ getNews(1, 'bloomberg'); addActive(pierwsza)});
+buzzfeed.addEventListener('click', () =>{ getNews(1, 'buzzfeed'); addActive(pierwsza)});
+
+
 
 strony.forEach(function(strona) {
   console.log(strona.value)
@@ -24,10 +38,11 @@ function addActive(strona){
   strona.classList.add('active');
 }
 
-function getNews(page)
+function getNews(page, source)
 {
-  var url = `https://newsapi.org/v2/everything?sources=techcrunch&language=en&page=${page}&apiKey=a3e15f82f1024a96b5c43b621d21c26d`;
+  var url = `https://newsapi.org/v2/everything?sources=${source}&language=en&page=${page}&apiKey=a3e15f82f1024a96b5c43b621d21c26d`;
   console.log(url);
+  document.getElementsByClassName('container')[0].innerHTML = '';
 
   $.getJSON( url, { articles: ""} )
     .done(function( json ) {
