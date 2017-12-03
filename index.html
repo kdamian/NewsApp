@@ -88,6 +88,33 @@
   		</div>
 
   	</footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <script src="jquery-1.11.3.min.js"></script>
+
+    <script>
+    var h = window.innerHeight;
+
+
+    	$(document).ready(function() {
+    	var footerY = $('footer').offset().top;
+
+    	var stickyFooter = function(){
+    	var ScrollY = $(window).scrollTop();
+
+    	if (ScrollY > footerY - 540) {
+    		$('footer').addClass('sticky');
+    	}
+    	};
+
+    	stickyFooter();
+
+    	$(window).scroll(function() {
+    		stickyFooter();
+    	});
+    	});
+
+    </script>
 
 
 <script src="js/main.js" charset="utf-8"></script>
